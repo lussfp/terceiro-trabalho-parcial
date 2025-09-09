@@ -6,7 +6,7 @@ import io.quarkus.hibernate.orm.panache.PanacheEntity;
 
 @Entity
 @Table(name = "emprestimos")
-public class Emprestimo extends PanacheEntity {
+public class Emprestimo extends PanacheEntityBase {
     
     @Column(name = "data_emprestimo", nullable = false)
     public LocalDate dataEmprestimo;
