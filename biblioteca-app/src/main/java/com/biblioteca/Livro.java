@@ -1,11 +1,11 @@
-package com.biblioteca.entidades;
+package com.biblioteca;
 
 import jakarta.persistence.*;
 import io.quarkus.hibernate.orm.panache.PanacheEntity;
 
 @Entity
 @Table(name = "livros")
-public class Livro extends PanacheEntityBase {
+public class Livro extends PanacheEntity {
     
     @Column(nullable = false)
     public String titulo;
